@@ -1,0 +1,240 @@
+{
+  "recipes": [
+    {
+      "img": "cupcake",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Keksiukai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food1",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Makaronai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food2",
+      "imgAlt": "Uogos ir riešutai",
+      "title": "Uogos ir riešutai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food3",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Lašiša",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food4",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Sumuštiniai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food7",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Daržovės ir ryžiai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food6",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Keksiukai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food8",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Keksiukai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    },
+    {
+      "img": "food2",
+      "imgAlt": "tastiest cupcakes",
+      "title": "Keksiukai",
+      "ingredients": [
+        "2 prinokę bananai",
+        "2kiaušiniai",
+        "130g reišutų svieto",
+        "1 a.š kepimo miltelių",
+        "(jei norit) 1 a.š. vanilinio cukraus"
+      ],
+      "cooking": [
+        "Įkaitinti orkaitę iki 180C",
+        "Visus ingridientus sumaišyti(aš tai darau mikseriu0)",
+        "Kepti 20-25min"
+      ]
+    }
+  ],
+  
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Koks jūsų pagridinis mytybos tikslas",
+      "answers": [
+        "Noriu sumažinti kūno svorį/riebalų audinį",
+        "Noriu padidinti raumeninę masę/priaugti svorio.",
+        "Noriu pagrinti sveikatą bei savaijautą.",
+        "Noriu palaikyti esamą svorį ir išmokti tvarkingai maitintits."
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Ar turite sveikatos nusiskundimų?",
+      "answers": [
+        "Neturiu jokių sveikatos nusiskundimų.",
+        "Kankina rūgštingumas.",
+        "Turiu bėrimų, pučia pilvą pavalgius tam tikrų maisto produktų.",
+        "Turiu tam tikrų lėtinių ligų."
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Arnevalgote kokių nors produktų?",
+      "answers": [
+        "Valgau viską.",
+        "Turiu nemėgstamų produktų.",
+        "Nevalgau kai kurių šių produktų: raudonos mėsos, paukštienos, kiaušinių, pieno produktų.",
+        "Valgau tik augalinės kilmės produktus."
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Koks jūsų darbo pobūdis?",
+      "answers": [
+        "Sėdimas darbas",
+        "Lengvas fizinis darbas.",
+        "Sunkus fizinis darbas.",
+        "Įvairus, nenuoseklus."
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Ar treniruojatės, jei taip kiek kartų savaitėje?",
+      "answers": [
+        "Nesitreniruoju.",
+        "1 - 2 kartai savaitėje.",
+        "3 - 4 kartai savaitėje.",
+        "5 ir daugiau kartai savaitėje."
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Ar mėgstate rūgpienį, jei taip kokio riebumo?",
+      "answers": [
+        "Nevartoju.",
+        "Kuo riebesnis tuo geriau.",
+        "Tik kaimišką iš močiutės.",
+        "Kas per klausimai?."
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Ar mėgstate jodinėti arkliu?",
+      "answers": [
+        "Nesu bandęs.",
+        "Po to kai susitrenkiau galvą, nebe.",
+        "Draugai mane vadina raiteliu be galvos.",
+        "Arkliai žemę aria jais nieks nejodinėja..."
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Ką manote apie jonvabalius?",
+      "answers": [
+        "Įtartini gyviai.",
+        "Manau jie kažką rezga.",
+        "Man jie patinka.",
+        "Išgalvotas pramanas"
+      ]
+    }
+  ]
+}
