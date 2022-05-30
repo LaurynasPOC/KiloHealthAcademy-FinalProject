@@ -15,7 +15,6 @@ import {
   currentQuestionIndex,
   selectQuestion,
   selectquestions,
-  selectScore,
 } from "state/selectors";
 
 import { DefaultButton } from "components/buttons/DefaultButton";
@@ -23,7 +22,7 @@ import { DefaultButton } from "components/buttons/DefaultButton";
 const QuizPageSection = () => {
   const dispatch = useDispatch();
   const currentQuestion = useSelector(selectQuestion);
-  const score = useSelector(selectScore);
+
   const currentQuestionInd = useSelector(currentQuestionIndex);
   const questionsInd = [0, 1, 2, 3];
 

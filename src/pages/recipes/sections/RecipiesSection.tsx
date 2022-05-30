@@ -9,16 +9,6 @@ import RecipeCard from "../elements/RecipeCard";
 import Footer from "components/footer/Footer";
 
 const RecipiesSection = () => {
-  // const dispatch = useDispatch();
-  // const recipes = useSelector(selectRecipes);
-  // console.log("iš recipes", dispatch(fetchRecipesAction()));
-  // console.log("iš recipes section", recipes);
-
-  // useEffect(() => {
-  //   console.log("iš efekto", dispatch(setRecipesData(recipes)));
-  // }, []);
-  // console.log("iš efekto", dispatch(setRecipesData(recipes)));
-  // console.log("last try", dispatch(fetchRecipesAction()));
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
@@ -31,10 +21,7 @@ const RecipiesSection = () => {
 
   return (
     <>
-      <SectionWrapper
-        height="100wv"
-        backgroundImage="linear-gradient(90deg, rgba(251,255,181,1) 0%, rgba(131,200,87,0.4051995798319328) 41%, rgba(231,247,163,1) 100%)"
-      >
+      <SectionWrapper height="100wv">
         <Container>
           <SubHeader text="Sveikesnis maistas - geresnė savijauta!" />
           <GridWrapper
@@ -58,7 +45,6 @@ const RecipiesSection = () => {
           </GridWrapper>
         </Container>
       </SectionWrapper>
-      <Footer />
     </>
   );
 };

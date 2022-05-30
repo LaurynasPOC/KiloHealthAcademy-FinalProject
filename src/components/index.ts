@@ -6,3 +6,4 @@ export * from "./wrappers/FlexWrapper";
 export * from "./wrappers/GridWrapper";
 export * from "./typography/Typography";
 export * from "./Image";
+export * from "./links/DefaultLink";

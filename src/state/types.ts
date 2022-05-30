@@ -2,12 +2,8 @@ import { rootReducer } from "./store";
 
 export interface Questions {
   questions: QuizData | any;
-  currentQuestionIndex: any;
+  currentQuestionIndex: number;
   score: number;
-  // a: number;
-  // b: number;
-  // c: number;
-  // d: number;
 }
 
 export interface QuizData {

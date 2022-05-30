@@ -1,7 +1,6 @@
 import React from "react";
 import { ReviewTypes } from "constants/ReviewData";
-import { FlexWrapper, Image } from "components";
-import { Typography, Box } from "components";
+import { FlexWrapper, Image, Typography, Box } from "components";
 
 const ReviewCard: React.FC<ReviewTypes> = ({
   name,
@@ -13,7 +12,7 @@ const ReviewCard: React.FC<ReviewTypes> = ({
   const starArr: Array<any> = [];
 
   for (let i = 0; i < 5; i++) {
-    const imgStar = <Image src="star" alt="star" />;
+    const imgStar = <Image key={i} src="star" alt="star" />;
     starArr.push(imgStar);
   }
 

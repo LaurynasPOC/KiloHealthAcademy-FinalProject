@@ -33,6 +33,7 @@ export const theme = {
   fonts: {
     primary: "Red Hat Display",
   },
+
   fontSizes: {
     fs72: "4.5rem",
     fs64: "4rem",
@@ -63,10 +64,7 @@ export const theme = {
     fw900: 900,
   },
   breakpoints,
-  borders: {
-    borderThin1: "1px solid",
-    border2: "2px solid",
-  },
+
   radii: {
     none: "0",
     base: "2rem",
@@ -74,7 +72,6 @@ export const theme = {
     br8: "0.5rem",
     br16: "1rem",
     br40: "2.5rem",
-    fallingCircle: "55% 35% 55% 35%",
   },
 
   zIndices: {

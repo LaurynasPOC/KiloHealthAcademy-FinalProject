@@ -24,33 +24,29 @@ const ReviewSection: React.FC<Props> = () => {
             enableMouseSwipe={true}
             isRTL={true}
           >
-            {REVIEW.map(({ name, city, img, alt, review }, i) => {
-              return (
-                <ReviewCard
-                  key={i}
-                  name={name}
-                  city={city}
-                  img={img}
-                  alt={alt}
-                  review={review}
-                />
-              );
-            })}
+            {REVIEW.map(({ name, city, img, alt, review }, i) => (
+              <ReviewCard
+                key={i}
+                name={name}
+                city={city}
+                img={img}
+                alt={alt}
+                review={review}
+              />
+            ))}
           </ReactElasticCarousel>
         ) : (
           <FlexWrapper>
-            {REVIEW.map(({ name, city, img, alt, review }, i) => {
-              return (
-                <ReviewCard
-                  key={i}
-                  name={name}
-                  city={city}
-                  img={img}
-                  alt={alt}
-                  review={review}
-                />
-              );
-            })}
+            {REVIEW.map(({ name, city, img, alt, review }, i) => (
+              <ReviewCard
+                key={i}
+                name={name}
+                city={city}
+                img={img}
+                alt={alt}
+                review={review}
+              />
+            ))}
           </FlexWrapper>
         )}
       </Box>

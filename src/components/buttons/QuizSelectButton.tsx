@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { smMobile } from "styles/breakpoints";
+import LoadingAnimation from "components/globalElements/LaodingAnimation";
 
 import { BaseButton, DefaultButtonProps } from "./elements/BaseButton";
 
@@ -12,7 +13,7 @@ export const QuizSelectButton: React.FC<DefaultButtonProps> = ({
   ...rest
 }) => (
   <Button onClick={onClick} {...rest}>
-    {status === "loading" ? "Loading..." : children}
+    {status === "loading" ? <LoadingAnimation /> : children}
   </Button>
 );
 

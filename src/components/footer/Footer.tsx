@@ -16,7 +16,7 @@ const Footer = () => {
       borderTop={`2px solid ${theme.colors.primary}`}
     >
       <FlexWrapper justifyContent="center">
-        {NAVBARDATA[0].socialTags.map(({ img, alt, link }, i) => (
+        {NAVBARDATA.socialTags.map(({ img, alt, link }, i) => (
           <Box mx="0.1875rem" key={i}>
             <Link to={link}>
               <Image height="1.875rem" src={img} alt={alt} />

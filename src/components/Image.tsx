@@ -14,7 +14,7 @@ interface Styles {
 }
 
 const Img = styled.img<Styles>`
-  margin: ${({ margin }) => margin || "auto 0"};
+  margin: ${({ margin }) => margin || "0 auto"};
   max-width: ${({ maxWidth }) => maxWidth || "100%"};
   width: ${({ width }) => width || ""};
   height: ${({ height }) => height || ""};

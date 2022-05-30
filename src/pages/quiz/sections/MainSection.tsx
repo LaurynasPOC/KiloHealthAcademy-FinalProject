@@ -1,7 +1,7 @@
 import React from "react";
 import EndQuizSection from "./EndQuizSection";
 import QuizPageSection from "./QuizPageSection";
-import FetchingSection from "./FetchingSection";
+import LoadingAnimation from "components/globalElements/LaodingAnimation";
 import StartQuizSection from "./StartQuizSection";
 // import * as stages from "../../../constants/QuizConstants";
 import { useSelector } from "react-redux";
@@ -23,7 +23,7 @@ const MainSection = () => {
       displayedPage = <StartQuizSection />;
       break;
     case FETCHING_QUIZ:
-      displayedPage = <FetchingSection />;
+      displayedPage = <LoadingAnimation />;
       break;
     case QUIZ:
       displayedPage = <QuizPageSection />;
