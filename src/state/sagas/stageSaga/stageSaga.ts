@@ -2,7 +2,6 @@ import axios, { AxiosResponse } from "axios";
 import { take, fork, put, takeEvery } from "redux-saga/effects";
 import { setStartQuiz } from "state/slices/stageSlice";
 import { fetchQuestionsSuccess } from "state/slices/quizSlice";
-import { fetchQuestionAction } from "./stageSagaAction";
 
 const url = "http://localhost:3001/quiz";
 
@@ -21,5 +20,4 @@ export default function* startQuizSaga() {
     yield take(setStartQuiz);
     yield fork(fetchQuestionsSaga);
   }
-  yield takeEvery(fetchQuestionAction, fetchQuestionsSaga);
 }
