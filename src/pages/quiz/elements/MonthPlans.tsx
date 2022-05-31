@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
 import { Box, FlexWrapper, Typography } from "components";
+
 import { theme } from "styles/theme";
+import { Input } from "components/buttons/Input";
 
 export interface Props {
   title?: string;
@@ -34,6 +36,9 @@ const MonthPlans: React.FC<Props> = ({
       onClick={() => setSelected(!selected)}
     >
       <Box>
+        <Box>
+          <Input type="radio" value={title} />
+        </Box>
         <Typography color={"primary"} textAlign={"center"} fontWeight={"fw700"}>
           {title}
         </Typography>

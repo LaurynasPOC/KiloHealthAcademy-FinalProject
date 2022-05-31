@@ -6,6 +6,7 @@ import { mobile } from "styles/breakpoints";
 
 export type InputTypes =
   | "checkbox"
+  | "radio"
   | "email"
   | "number"
   | "password"

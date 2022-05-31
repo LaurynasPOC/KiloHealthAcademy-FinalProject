@@ -171,6 +171,12 @@ export const theme = {
       lineheight: "1rem",
       fontWeight: 500,
     },
+    zIndices: {
+      base: 0,
+      upperElement: 1,
+      modal: 10,
+      loader: 11,
+    },
   },
   space: [] as (string | number)[] | BreakpointsProp<string>,
 };

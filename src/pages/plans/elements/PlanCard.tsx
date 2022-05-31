@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 import { Box, Typography } from "components";
 import { theme } from "styles/theme";
@@ -13,6 +14,19 @@ export interface Props {
 
 const PlanCard: React.FC<Props> = ({ title, price }) => {
   const [selected, setSelected] = useState(false);
+
+  useEffect(() => {
+    console.log("effect");
+    axios.get("http://localhost:3001/quiz").then((resp) => {
+      console.log("promise fulfiled");
+      setSelected(false);
+    });
+  }, []);
+
+  const selectHandler = () => {
+    setSelected(!selected);
+  };
+
   return (
     <Box
       p={"1rem"}
@@ -23,7 +37,7 @@ const PlanCard: React.FC<Props> = ({ title, price }) => {
           ? { border: `4px solid ${theme.colors.accent}` }
           : { border: `2px solid ${theme.colors.primary}` }
       }
-      onClick={() => setSelected(!selected)}
+      onClick={selectHandler}
     >
       <Box>
         <Typography color={"primary"} textAlign={"center"} fontWeight={"fw700"}>

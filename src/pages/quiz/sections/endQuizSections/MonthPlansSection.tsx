@@ -4,10 +4,11 @@ import { PlansTypes } from "constants/PlansData";
 
 import MonthPlans from "pages/quiz/elements/MonthPlans";
 
-import { Box } from "components";
+import { Box, FlexWrapper } from "components";
 import { useSelector } from "react-redux";
 import { selectScore } from "state/selectors";
 import { DefaultButton } from "components/buttons/DefaultButton";
+import { PlanstLink } from "components/links/PlansLink";
 
 const MonthPlansSection: React.FC<PlansTypes> = () => {
   const score = useSelector(selectScore);
@@ -73,16 +74,11 @@ const MonthPlansSection: React.FC<PlansTypes> = () => {
           );
         }
       })}
-      <Box mt="2rem">
-        <DefaultButton
-          m={"auto"}
-          height={"2rem"}
-          width={"6rem"}
-          borderRadius={"br8"}
-        >
-          Pirkti
-        </DefaultButton>
-      </Box>
+      <FlexWrapper justifyContent={"center"} m="auto" mt="2rem">
+        <PlanstLink to="/success">
+          <DefaultButton>Pirkti</DefaultButton>
+        </PlanstLink>
+      </FlexWrapper>
     </Box>
   );
 };

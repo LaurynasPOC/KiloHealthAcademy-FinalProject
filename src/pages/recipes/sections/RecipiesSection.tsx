@@ -12,9 +12,7 @@ const RecipiesSection = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    console.log("effect");
     axios.get("http://localhost:3001/recipes").then((resp) => {
-      console.log("promise fulfiled");
       setRecipes(resp.data);
     });
   }, []);

@@ -5,6 +5,7 @@ import { PlansTypes } from "constants/PlansData";
 import PlanCard from "../elements/PlanCard";
 import { Box, FlexWrapper, Typography } from "components";
 import { DefaultButton } from "components/buttons/DefaultButton";
+import { Link } from "gatsby";
 
 const PlansSection: React.FC<PlansTypes> = () => (
   <>
@@ -58,15 +59,17 @@ const PlansSection: React.FC<PlansTypes> = () => (
           </FlexWrapper>
         </Box>
       ))}
-      <DefaultButton
-        m={"auto"}
-        height={"2rem"}
-        width={"6rem"}
-        borderRadius={"br8"}
-        my="1rem"
-      >
-        Pirkti
-      </DefaultButton>
+      <Link to="/success">
+        <DefaultButton
+          m={"auto"}
+          height={"2rem"}
+          width={"6rem"}
+          borderRadius={"br8"}
+          my="1rem"
+        >
+          Pirkti
+        </DefaultButton>
+      </Link>
     </Box>
   </>
 );

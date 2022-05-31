@@ -5,7 +5,6 @@ import {
   backQuestion,
   nextQuestion,
 } from "state/slices/quizSlice";
-import { AppState } from "state/types";
 
 import { QuizButton } from "components/buttons/QuizButton";
 import { finnishQuiz } from "state/slices/stageSlice";

@@ -20,6 +20,6 @@ export default function* startQuizSaga() {
   while (true) {
     yield take(setStartQuiz);
     yield fork(fetchQuestionsSaga);
-    yield takeEvery(fetchQuestionAction, fetchQuestionsSaga);
   }
+  yield takeEvery(fetchQuestionAction, fetchQuestionsSaga);
 }

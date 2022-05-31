@@ -26,6 +26,7 @@ import kylie from "assets/images/Kylie.jpg";
 import emily from "assets/images/Emily.jpg";
 import jessica from "assets/images/Jesica.jpg";
 import star from "assets/images/Star.svg";
+import confetti from "assets/images/confetti.png";
 
 export type Visuals = keyof typeof visuals;
 export const visuals: Record<string, string> = {
@@ -57,4 +58,5 @@ export const visuals: Record<string, string> = {
   jessica,
   kylie,
   star,
+  confetti,
 };

@@ -11,6 +11,7 @@ interface Styles {
   height?: string;
   margin?: string;
   maxHeight?: string;
+  position?: string;
 }
 
 const Img = styled.img<Styles>`
@@ -19,6 +20,7 @@ const Img = styled.img<Styles>`
   width: ${({ width }) => width || ""};
   height: ${({ height }) => height || ""};
   max-height: ${({ maxHeight }) => maxHeight || ""};
+  position: ${({ position }) => position || ""};
 `;
 
 interface ImageProps extends Styles {
