@@ -1,17 +1,11 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { actionChannel } from "redux-saga/effects";
 import { Questions, QuizData } from "state/types";
-import { finnishQuiz } from "./stageSlice";
 
 const initialState: Questions = {
   questions: {
     question: "",
     answers: [""],
   },
-  //   a: 1,
-  //   b: 2,
-  //   c: 3,
-  //   d: 4,
   score: null as unknown as number,
   currentQuestionIndex: null as unknown as any,
 };
@@ -26,15 +20,7 @@ const quizSlice = createSlice({
       state.currentQuestionIndex = 0;
     },
     answerQuestion: (state, action: PayloadAction<number>) => {
-      if (action.payload) {
-        state.score += action.payload;
-      } else if (action.payload) {
-        state.score += action.payload;
-      } else if (action.payload) {
-        state.score += action.payload;
-      } else {
-        state.score += 4;
-      }
+      state.score += action.payload;
     },
     nextQuestion: (state) => {
       state.currentQuestionIndex += 1;

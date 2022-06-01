@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Box, FlexWrapper, Typography } from "components";
 
 import { theme } from "styles/theme";
-import { Input } from "components/buttons/Input";
 
 export interface Props {
   title?: string;
