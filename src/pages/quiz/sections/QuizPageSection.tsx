@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   answerQuestion,
   backQuestion,
+  endQuiz,
   nextQuestion,
 } from "state/slices/quizSlice";
 
@@ -14,6 +15,7 @@ import {
   currentQuestionIndex,
   selectQuestion,
   selectquestions,
+  selectScoreArr,
 } from "state/selectors";
 
 import { DefaultButton } from "components/buttons/DefaultButton";
@@ -21,13 +23,19 @@ import { DefaultButton } from "components/buttons/DefaultButton";
 const QuizPageSection = () => {
   const dispatch = useDispatch();
   const currentQuestion = useSelector(selectQuestion);
-
   const currentQuestionInd = useSelector(currentQuestionIndex);
   const questionsInd = [0, 1, 2, 3];
+  const questionsLength = useSelector(selectquestions).length - 1;
+  const scoreArr = useSelector(selectScoreArr);
+  console.log(scoreArr);
 
-  const questionsLength = useSelector(selectquestions).length;
-
+  const score = scoreArr.reduce((a: number, b: number) => a + b, 0);
+  console.log(score);
   const answerHandler = (answer: any) => {
+    if (currentQuestionInd === questionsLength) {
+      dispatch(finnishQuiz());
+      dispatch(endQuiz(score));
+    }
     dispatch(answerQuestion(answer));
   };
 
@@ -89,7 +97,7 @@ const QuizPageSection = () => {
               </DefaultButton>
             )}
 
-            {currentQuestionInd === questionsLength - 1 ? (
+            {currentQuestionInd === questionsLength ? (
               ""
             ) : (
               <DefaultButton

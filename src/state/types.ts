@@ -4,6 +4,8 @@ export interface Questions {
   questions: QuizData | any;
   currentQuestionIndex: number;
   score: number;
+  preAnswer: number;
+  scoreArr: number[];
 }
 
 export interface QuizData {
