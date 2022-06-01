@@ -7,6 +7,7 @@ import AdvertismentSection from "pages/plans/sections/AdvertismentSection";
 import ReviewSection from "pages/plans/sections/ReviewSection";
 import FAQSection from "pages/duk/sections/FAQSection";
 import SubHeader from "components/globalElements/SubHeader";
+
 const EndQuizSection = () => {
   const username = useSelector(selectUsername);
   return (

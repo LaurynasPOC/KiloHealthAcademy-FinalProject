@@ -9,12 +9,11 @@ export type InputTypes =
   | "radio"
   | "email"
   | "number"
-  | "password"
   | "submit"
   | "text";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
+  id?: string;
   value?: string | number;
   placeholder?: string;
   type?: InputTypes;
@@ -22,7 +21,7 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input: React.FC<InputProps & BoxStyles<Theme>> = ({
-  label,
+  id,
   type,
   value,
   placeholder,
@@ -30,8 +29,8 @@ export const Input: React.FC<InputProps & BoxStyles<Theme>> = ({
   ...props
 }) => (
   <Box>
-    {label && <label htmlFor="input">{label}</label>}
     <InputStyles
+      id={id}
       value={value}
       type={type}
       placeholder={placeholder}
@@ -45,6 +44,7 @@ const InputStyles = styled.input<InputProps>`
   border: none;
   border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
   max-width: 50%;
+  cursor: pointer;
   @media ${mobile} {
     max-width: 90%;
   }

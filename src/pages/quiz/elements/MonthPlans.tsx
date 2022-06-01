@@ -36,9 +36,6 @@ const MonthPlans: React.FC<Props> = ({
       onClick={() => setSelected(!selected)}
     >
       <Box>
-        <Box>
-          <Input type="radio" value={title} />
-        </Box>
         <Typography color={"primary"} textAlign={"center"} fontWeight={"fw700"}>
           {title}
         </Typography>

@@ -1,4 +1,4 @@
-import { Container, SectionWrapper, Box, Typography } from "components";
+import { SectionWrapper, Box, Typography } from "components";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setStartQuiz } from "state/slices/stageSlice";
@@ -16,40 +16,38 @@ const StartQuizSection = () => {
 
   return (
     <SectionWrapper height="100vh">
-      <Container>
-        <Box
-          p={"1rem"}
-          borderRadius={"br8"}
-          m={"auto"}
-          maxWidth="20rem"
-          height={"20rem"}
-          bg={"white"}
-          textAlign={"center"}
-        >
-          <Box mt={"3rem"}>
-            <Typography color="primary" type="h6">
-              Susipažinkime!
-            </Typography>
-            <Box my="1rem">
-              <Input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Vardas..."
-              />
-            </Box>
-            <Box my="1rem">
-              <Input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="El paštas..."
-              />
-            </Box>
-            <QuizButton onClick={startQuizHandler}>Kitas klausimas</QuizButton>
+      <Box
+        p={"1rem"}
+        borderRadius={"br8"}
+        m={"auto"}
+        maxWidth="20rem"
+        height={"20rem"}
+        bg={"white"}
+        textAlign={"center"}
+      >
+        <Box mt={"3rem"}>
+          <Typography color="primary" type="h6">
+            Susipažinkime!
+          </Typography>
+          <Box my="1rem">
+            <Input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Vardas..."
+            />
           </Box>
+          <Box my="1rem">
+            <Input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="El paštas..."
+            />
+          </Box>
+          <QuizButton onClick={startQuizHandler}>Kitas klausimas</QuizButton>
         </Box>
-      </Container>
+      </Box>
     </SectionWrapper>
   );
 };
