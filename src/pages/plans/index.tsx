@@ -1,4 +1,4 @@
-import { SectionWrapper, Typography } from "components";
+import { SectionWrapper } from "components";
 import Footer from "components/footer/Footer";
 import SubHeader from "components/globalElements/SubHeader";
 import Navbar from "components/navbar/Navbar";
@@ -16,9 +16,7 @@ const index = () => {
       <SectionWrapper>
         <SubHeader text="Planų pasirinkimai" />
         <PlansSection power={[]} active={[]} healthy={[]} />
-        <Typography my="2rem" textAlign={"center"} type="h6" color="primary">
-          Mano klienčių atsiliepimai
-        </Typography>
+        <SubHeader text="Mano klienčių atsiliepimai" />
         <ReviewSection />
         <AdvertismentSection />
         <FAQSection />

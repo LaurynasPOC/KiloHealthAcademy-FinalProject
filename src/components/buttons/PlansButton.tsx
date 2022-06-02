@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import LoadingAnimation from "components/globalElements/LaodingAnimation";
 
 import { BaseButton, DefaultButtonProps } from "./elements/BaseButton";
 
@@ -10,7 +11,7 @@ export const PlansButton: React.FC<DefaultButtonProps> = ({
   ...rest
 }) => (
   <Button onClick={onClick} {...rest}>
-    {status === "loading" ? "Loading..." : children}
+    {status === "loading" ? <LoadingAnimation /> : children}
   </Button>
 );
 

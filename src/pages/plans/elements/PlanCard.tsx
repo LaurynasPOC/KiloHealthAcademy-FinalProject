@@ -15,14 +15,6 @@ export interface Props {
 const PlanCard: React.FC<Props> = ({ title, price }) => {
   const [selected, setSelected] = useState(false);
 
-  useEffect(() => {
-    console.log("effect");
-    axios.get("http://localhost:3001/quiz").then((resp) => {
-      console.log("promise fulfiled");
-      setSelected(false);
-    });
-  }, []);
-
   const selectHandler = () => {
     setSelected(!selected);
   };

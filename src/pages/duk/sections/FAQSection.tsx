@@ -1,13 +1,12 @@
 import React from "react";
 import FAQPart from "../elements/FAQParts";
 import { FAQ } from "constants/FAQData";
-import { Typography, Box } from "components";
+import { Box } from "components";
+import SubHeader from "components/globalElements/SubHeader";
 
 const FAQSection: React.FC = () => (
   <Box>
-    <Typography m="2rem" textAlign={"center"} type="h6" color="primary">
-      Čia rasi atsakymus į dažniausiai užduodamus klausimus
-    </Typography>
+    <SubHeader text="Čia rasi atsakymus į dažniausiai užduodamus klausimus" />
     <Box
       borderRadius={"br8"}
       p="1rem"

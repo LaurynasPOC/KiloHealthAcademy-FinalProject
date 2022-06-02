@@ -64,6 +64,7 @@ const QuizPageSection = () => {
           {currentQuestion.question}
         </Typography>
         <Box>
+          <Box>{score}</Box>
           <Box>
             {questionsInd.map((ind) => (
               <Typography key={ind} py="0.5rem">

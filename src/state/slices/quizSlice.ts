@@ -22,7 +22,7 @@ const quizSlice = createSlice({
       state.currentQuestionIndex = 0;
     },
     answerQuestion: (state, action: PayloadAction<number>) => {
-      state.scoreArr.concat(action.payload);
+      state.scoreArr.push(action.payload);
       state.currentQuestionIndex += 1;
     },
     nextQuestion: (state) => {

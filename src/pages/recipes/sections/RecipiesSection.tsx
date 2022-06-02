@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SubHeader from "components/globalElements/SubHeader";
-
 import axios from "axios";
 import { GridWrapper, SectionWrapper, Container } from "components";
-
 import RecipeCard from "../elements/RecipeCard";
-
-import Footer from "components/footer/Footer";
 
 const RecipiesSection = () => {
   const [recipes, setRecipes] = useState([]);

@@ -1,7 +1,6 @@
 import React from "react";
 import { PLANS } from "constants/PlansData";
 import { PlansTypes } from "constants/PlansData";
-
 import PlanCard from "../elements/PlanCard";
 import { Box, FlexWrapper, Typography } from "components";
 import { DefaultButton } from "components/buttons/DefaultButton";
