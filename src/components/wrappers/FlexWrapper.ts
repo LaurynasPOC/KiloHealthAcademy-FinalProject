@@ -3,7 +3,11 @@ import { flexbox, FlexboxProps } from "styled-system";
 import { Box } from "./Box";
 import { Theme } from "styles/theme";
 
-export const FlexWrapper = styled(Box)<FlexboxProps<Theme>>`
+interface FlexProps extends FlexboxProps<Theme> {
+  flexDirection?: any;
+}
+
+export const FlexWrapper = styled(Box)<FlexProps>`
   display: flex;
 
   ${flexbox};
