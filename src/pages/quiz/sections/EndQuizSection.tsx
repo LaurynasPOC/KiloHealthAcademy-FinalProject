@@ -12,12 +12,7 @@ const EndQuizSection = () => {
   const username = useSelector(selectUsername);
   return (
     <SectionWrapper>
-      <SubHeader
-        text={
-          username +
-          " rinkis iš šių planų ir gauk tik tau specialiai pritakytą nuolaidą!"
-        }
-      />
+      <SubHeader text={username + " specialus pasiūlymasa tik tau!"} />
 
       <MonthPlansSection power={[]} active={[]} healthy={[]} />
 

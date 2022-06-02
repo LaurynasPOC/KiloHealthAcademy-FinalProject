@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { mobile } from "styles/breakpoints";
+import LoadingAnimation from "components/globalElements/LaodingAnimation";
 
 import { BaseButton, DefaultButtonProps } from "./elements/BaseButton";
 
@@ -8,11 +9,11 @@ export const QuizButton: React.FC<DefaultButtonProps> = ({
   status,
   children,
   onClick,
-
+  style,
   ...rest
 }) => (
-  <Button onClick={onClick} {...rest}>
-    {status === "loading" ? "Loading..." : children}
+  <Button style={style} onClick={onClick} {...rest}>
+    {status === "loading" ? <LoadingAnimation /> : children}
   </Button>
 );
 

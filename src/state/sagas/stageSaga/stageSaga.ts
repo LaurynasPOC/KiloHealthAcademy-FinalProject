@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from "axios";
-import { take, fork, put, takeEvery } from "redux-saga/effects";
+import { take, fork, put } from "redux-saga/effects";
 import { setStartQuiz } from "state/slices/stageSlice";
 import { fetchQuestionsSuccess } from "state/slices/quizSlice";
 

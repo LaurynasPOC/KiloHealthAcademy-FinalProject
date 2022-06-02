@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+
 import {
   answerQuestion,
   backQuestion,
@@ -27,10 +28,9 @@ const QuizPageSection = () => {
   const questionsInd = [0, 1, 2, 3];
   const questionsLength = useSelector(selectquestions).length - 1;
   const scoreArr = useSelector(selectScoreArr);
-  console.log(scoreArr);
 
   const score = scoreArr.reduce((a: number, b: number) => a + b, 0);
-  console.log(score);
+
   const answerHandler = (answer: any) => {
     if (currentQuestionInd === questionsLength) {
       dispatch(finnishQuiz());
@@ -64,25 +64,15 @@ const QuizPageSection = () => {
           {currentQuestion.question}
         </Typography>
         <Box>
-          {currentQuestionInd === 2 ? (
-            questionsInd.map((ind) => (
+          <Box>
+            {questionsInd.map((ind) => (
               <Typography key={ind} py="0.5rem">
                 <QuizButton onClick={() => answerHandler(ind)}>
                   {currentQuestion.answers[ind]}
                 </QuizButton>
               </Typography>
-            ))
-          ) : (
-            <Box>
-              {questionsInd.map((ind) => (
-                <Typography key={ind} py="0.5rem">
-                  <QuizButton onClick={() => answerHandler(ind)}>
-                    {currentQuestion.answers[ind]}
-                  </QuizButton>
-                </Typography>
-              ))}
-            </Box>
-          )}
+            ))}
+          </Box>
 
           <FlexWrapper justifyContent={"center"}>
             {currentQuestionInd === 0 ? (

@@ -20,6 +20,8 @@ export interface DefaultButtonProps
     LayoutProps<Theme>,
     BorderRadiusProps<Theme> {
   type?: "button" | "submit" | "reset";
+  style?: any;
+  text?: number;
   onClick?: () => void;
   status?: Statuses;
   children: ReactNode;
